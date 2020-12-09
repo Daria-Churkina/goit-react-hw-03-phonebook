@@ -1,0 +1,116 @@
+.section {
+  padding: 10px;
+  width: 350px;
+  background: transparent;
+
+  margin: 0 auto;
+  font-family: 'Texturina', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0a0a0aee;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 20px;
+
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.5),
+    0px 1px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.main-container {
+  background-image: url('https://cdn.pixabay.com/photo/2015/06/08/14/52/wave-801752_960_720.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  border-radius: 5px;
+}
+
+input[name='filter'] {
+  margin-left: 10px;
+}
+
+input:valid {
+  border-color: green;
+  color: green;
+  box-shadow: none;
+}
+
+input:invalid {
+  border-color: red;
+  color: red;
+  box-shadow: none;
+}
+
+input:focus:valid {
+  border-color: green;
+  color: green;
+  box-shadow: none;
+}
+
+input:focus:invalid {
+  border-color: red;
+  color: red;
+  box-shadow: none;
+}
+
+.contactList {
+  list-style: none;
+  padding: 0px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+}
+
+.contactItem:before {
+  content: ' ';
+  display: inline-block;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  background: url(https://www.flaticon.com/svg/static/icons/svg/3814/3814569.svg)
+    no-repeat;
+  background-size: contain;
+}
+
+.deleteContactButton {
+  margin-left: 10px;
+  border: none;
+  padding: 3px 5px;
+  background-color: rgb(235, 15, 52);
+  color: #fff;
+  font-weight: 500;
+  /* margin-left: 5px;
+  margin-right: 5px; */
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 1px 2px 2px 0 rgb(0 0 0 / 0.5);
+  transition: box-shadow 250ms linear;
+  border-radius: 5px;
+}
+
+.addContact {
+  border: none;
+  padding: 5px 15px;
+  background-color: rgb(85, 231, 158);
+  color: #fff;
+  font-weight: 500;
+  margin-top: 10px;
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 1px 2px 2px 0 rgb(0 0 0 / 0.5);
+  transition: box-shadow 250ms linear;
+  border-radius: 5px;
+}
